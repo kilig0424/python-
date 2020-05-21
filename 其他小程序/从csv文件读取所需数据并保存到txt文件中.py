@@ -16,31 +16,7 @@ file = 'F:\csv519.csv'
 start_n = int(input("请输入起始行："))
 end_n = int(input("请输入结束行："))
 
-#利用爬虫来获取回放链接
-#def log_in():
-##    opt = webdriver.ChromeOptions()
-##    opt.set_headless()
-#   # 创建浏览器对象,发请求
-#    driver = webdriver.Chrome()
-#    driver.get("http://vip.51cth.com") 
-#    # 找 用户名、密码、验证、登陆豆瓣按钮
-#    uname = driver.find_element_by_name("userName")
-#    uname.send_keys("51cth")
-#    # 密码
-#    pwd = driver.find_element_by_name("password")
-#    pwd.send_keys("123456")
-#    time.sleep(3)
-#    # 点击登陆按钮
-#    login = driver.find_element_by_class_name("input-submit.large")
-#    login.click()
-#    driver.save_screenshot("登陆成功.png")
-#    
-##    点击直播后台按钮
-#    head_open = driver.find_element_by_id("head_open_live")
-#    head_open.click()
-#    driver.save_screenshot("挑战到直播后台.png")
-#    # 关闭浏览器
-#    driver.quit()
+
         
     
 
