@@ -39,7 +39,6 @@ class BaiduImageSpider:
             self.writeImage(img_link,foldername)
             
     def mkdir(self,name):
-		#这里是设置爬取下来文件的保存路径，可以自行设置
         path = 'H:/爬虫学习/23-百度贴吧图片爬取/' + name + '/'
         floder = os.path.exists(path)
         if not floder:
