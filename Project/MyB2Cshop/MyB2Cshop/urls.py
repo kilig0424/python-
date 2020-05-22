@@ -19,7 +19,7 @@ from django.urls import path,include
 import xadmin
 from django.views.static import serve
 from MyB2Cshop.settings import MEDIA_ROOT
-from goods.base_view import GoodsListView
+from goods.views import GoodsListView
 from rest_framework.documentation import include_docs_urls
 
 
@@ -30,4 +30,5 @@ urlpatterns = [
     path('goods/', GoodsListView.as_view(), name='goods-list'),
     # drf文档，title自定义
     path('docs', include_docs_urls(title='b2c后台管理')),
+    path('api-auth/',include('rest_framework.urls'))
 ]
