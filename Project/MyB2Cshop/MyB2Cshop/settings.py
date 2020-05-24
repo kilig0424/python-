@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'DjangoUeditor',
     'crispy_forms',
     'rest_framework',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 #重载系统的用户，让UserProfile生效
 AUTH_USER_MODEL = 'users.UserProfile'
+
+# REST_FRAMEWORK = {
+#     #分页
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#     #每页显示的个数
+#     'PAGE_SIZE': 10,
+# }
