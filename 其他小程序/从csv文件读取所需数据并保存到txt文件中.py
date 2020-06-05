@@ -12,7 +12,7 @@ import csv
 
 
 #读取文档中的数据
-file = 'F:\csv519.csv'
+file = 'F:\csv.csv'
 start_n = int(input("请输入起始行："))
 end_n = int(input("请输入结束行："))
 
@@ -60,7 +60,7 @@ def set_file(list):
     
     
 def write_file(list_all):
-    with open('520txt文件.txt','w',newline='\n') as f:
+    with open('528txt文件.txt','w',newline='\n') as f:
         for i in list_all:
             for j in i:
                 f.write(j)           
